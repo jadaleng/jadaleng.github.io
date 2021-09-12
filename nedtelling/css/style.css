@@ -8,9 +8,16 @@ body {
   display: flex;
   align-items: center;
   align-content: space-around;
-  transform: scale(2);
   background-color: #FFFBEE;
+  transform: scale(2);
 }
+
+@media(max-width: 1024px) {
+  body {
+    transform: scale(1);
+  }
+}
+
 
 body,
 .example h1,
@@ -20,7 +27,7 @@ body,
 }
 
 .example {
-  font-family: "MDG Gothic";
+  font-family: "MDG Gothic", "Avenir Next", sans-serif;
   font-size: 22px;
   width: 550px;
   height: 378px;
@@ -97,33 +104,8 @@ body,
     width: 100%;
     height: 362px;
   }
-
-  .example h1 {
-    font-size: 2.5em;
+  .flipdown {
+    transform: scale(0.8);
   }
 
-  .example p {
-    margin-bottom: 25px;
-  }
-
-  .example .buttons {
-    width: 100%;
-    margin-top: 25px;
-    text-align: center;
-    display: block;
-  }
-
-  .example .buttons p,
-  .example .buttons a {
-    float: none;
-    margin: 0 auto;
-  }
-
-  .example .buttons p {
-    padding-right: 0px;
-  }
-
-  .example .buttons a {
-    display: inline-block;
-  }
 }
