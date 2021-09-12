@@ -26,6 +26,14 @@ body,
   transition: all .2s ease-in-out;
 }
 
+#flipdown {
+  transition: opacity 0.8s ease-in-out;
+}
+
+body {
+  transition: all 0.8s ease-in-out;
+}
+
 .example {
   font-family: "MDG Gothic", "Arial Black", sans-serif;
   font-size: 22px;
